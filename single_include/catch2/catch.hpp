@@ -1,6 +1,6 @@
 /*
  *  Catch v2.13.2
- *  Generated: 2022-01-16 14:18:57.321613
+ *  Generated: 2022-01-16 14:21:09.837910
  *  ----------------------------------------------------------
  *  This file has been merged from multiple headers. Please don't edit it directly
  *  Copyright (c) 2022 Two Blue Cubes Ltd. All rights reserved.
@@ -16464,9 +16464,9 @@ void ConsoleReporter::testGroupEnded(TestGroupStats const& _testGroupStats) {
     StreamingReporterBase::testGroupEnded(_testGroupStats);
 }
 void ConsoleReporter::testRunEnded(TestRunStats const& _testRunStats) {
-    // dsicilia // printTotalsDivider(_testRunStats.totals);
+    printTotalsDivider(_testRunStats.totals);
     printTotals(_testRunStats.totals);
-    // dsicilia // stream << std::endl;
+    stream << std::endl;
     StreamingReporterBase::testRunEnded(_testRunStats);
 }
 void ConsoleReporter::testRunStarting(TestRunInfo const& _testInfo) {
