@@ -491,9 +491,9 @@ void ConsoleReporter::testGroupEnded(TestGroupStats const& _testGroupStats) {
     StreamingReporterBase::testGroupEnded(_testGroupStats);
 }
 void ConsoleReporter::testRunEnded(TestRunStats const& _testRunStats) {
-    printTotalsDivider(_testRunStats.totals);
+    // dsicilia // printTotalsDivider(_testRunStats.totals);
     printTotals(_testRunStats.totals);
-    stream << std::endl;
+    // dsicilia // stream << std::endl;
     StreamingReporterBase::testRunEnded(_testRunStats);
 }
 void ConsoleReporter::testRunStarting(TestRunInfo const& _testInfo) {
