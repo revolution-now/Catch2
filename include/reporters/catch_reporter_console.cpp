@@ -520,6 +520,7 @@ void ConsoleReporter::lazyPrintWithoutClosingBenchmarkTable() {
     }
 }
 void ConsoleReporter::lazyPrintRunInfo() {
+#if 0
     stream << '\n' << getLineOfChars<'~'>() << '\n';
     Colour colour(Colour::SecondaryText);
     stream << currentTestRunInfo->name
@@ -528,6 +529,7 @@ void ConsoleReporter::lazyPrintRunInfo() {
 
     if (m_config->rngSeed() != 0)
         stream << "Randomness seeded to: " << m_config->rngSeed() << "\n\n";
+#endif
 
     currentTestRunInfo.used = true;
 }
